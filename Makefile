@@ -13,13 +13,13 @@
 NAME = libftprintf.a
 OBJS = ${SRC:.c=.o}
 FLAGS = -Wall -Werror -Wextra
-SRC = ft_printf.c	\
-	  utils.c	\
-	  tools.c	\
-	  tools_2.c	\
-	  flags.c	\
-	  baseconv.c	\
-	  convert.c
+SRC = srcs/ft_printf.c	\
+	  srcs/utils.c	\
+	  srcs/tools.c	\
+	  srcs/tools_2.c	\
+	  srcs/flags.c	\
+	  srcs/baseconv.c	\
+	  srcs/convert.c
 $(NAME): ${OBJS}
 	ar -rcs ${NAME} ${OBJS}
 bonus: ${NAME} 
